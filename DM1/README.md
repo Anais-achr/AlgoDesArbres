@@ -11,8 +11,7 @@ le but de trouver tous les mots d’un texte qui ne sont pas déjà présent dan
 
 ## Option
 l'option ```-v``` permet de créer quatre fichiers .pdf et .dot contenant une représentation
-visuelle des ABR construits. Ces fichiers seront dans le dossier ./arbre_dot
-
+visuelle des ABR construits. Ces fichiers seront dans le dossier ```./arbre_dot```
 
 ## Tests
 un fichier ```test_ABR.c```est disponible.
