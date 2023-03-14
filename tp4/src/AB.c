@@ -98,3 +98,4 @@ Arbre construit_arbre(FILE *fichier) {
 
     return a;
 }
+
