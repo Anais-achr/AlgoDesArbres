@@ -1,7 +1,10 @@
 #ifndef AB_H
 #define AB_H
 
+#include <stdio.h>
+
 #define MAX(x, y) (((x) > (y)) ? (x) : (y))
+
 
 typedef struct noeud{
     int val;
