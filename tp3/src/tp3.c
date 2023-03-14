@@ -46,5 +46,6 @@ int main(int argc, char** argv){
     else
         printf("Pas ABR");
 
+    libere(&a);
     return 0;
 }

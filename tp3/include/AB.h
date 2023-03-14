@@ -80,4 +80,6 @@ int est_strictement_binaire(Arbre a);
  */
 Arbre construit_arbre(FILE *fichier);
 
+
+void libere(Arbre *a);
 #endif

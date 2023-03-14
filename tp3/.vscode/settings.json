@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "assert.h": "c",
+        "stdlib.h": "c",
+        "string.h": "c",
+        "abr.h": "c",
+        "ab.h": "c",
+        "algorithm": "c"
+    }
+}
