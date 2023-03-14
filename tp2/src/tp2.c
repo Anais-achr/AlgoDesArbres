@@ -36,5 +36,6 @@ int main(int argc, char** argv){
     printf("strictement binaire ? %d\n", est_strictement_binaire(a));
 
     fclose(f);
+    libere(&a);
     return 0;
 }

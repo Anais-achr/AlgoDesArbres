@@ -101,3 +101,14 @@ Arbre construit_arbre(FILE *fichier) {
 
     return a;
 }
+
+
+void libere(Arbre *a){
+    if(!(*a))
+        return;
+    libere(&(*a)->fg);
+    libere(&(*a)->fd);
+
+    free((*a));
+    (*a) = NULL;
+} 
