@@ -46,5 +46,7 @@ int main(int argc, char** argv){
 
     fclose(f);
     fclose(f2);
+    
+    libere(&a);
     return 0;
 }

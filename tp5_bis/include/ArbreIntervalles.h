@@ -25,4 +25,5 @@ ArbreI rencontre(Intervalle I, ArbreI a);
 NoeudI* extraitMin(ArbreI *a);
 ArbreI extrait(Intervalle I, ArbreI *a);
 
+void libere(ArbreI *a);
 #endif

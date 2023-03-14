@@ -137,3 +137,13 @@ NoeudI *extrait(Intervalle I, ArbreI *a){
 
     return tmp;
 }
+
+void libere(ArbreI *a){
+    if(!(*a))
+        return;
+    libere(&(*a)->fg);
+    libere(&(*a)->fd);
+
+    free((*a));
+    (*a) = NULL;
+} 
