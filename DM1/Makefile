@@ -20,6 +20,7 @@ filtre: $(BIN_DIR)Filtrage.o $(UTILS)
 	$(CC) -o $@ $^
 
 $(BIN_DIR)%.o: $(SRC_DIR)%.c $(HEADER) 
+	mkdir -p $(BIN_DIR)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 
@@ -38,6 +39,7 @@ $(TEST_BIN_DIR)%.o: $(TEST_DIR)%.c $(HEADER)
 
 clean:
 	rm -f $(BIN_DIR)*.o test_ABR filtre $(TEST_BIN_DIR)*.o
+	rm -r $(BIN_DIR)
 
 
 
