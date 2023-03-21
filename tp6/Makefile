@@ -15,8 +15,10 @@ $(EXEC) : $(OBJECTS)
 
 
 $(BIN_DIR)%.o : $(SRC_DIR)%.c $(HEADER)
+	mkdir -p $(BIN_DIR)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 
 clean: 
-	-rm -f $(BIN_DIR)*.o $(EXEC)
+	rm -f $(BIN_DIR)*.o $(EXEC)
+	rm -r $(BIN_DIR)
